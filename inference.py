@@ -19,7 +19,7 @@ model = AutoModelForTokenClassification.from_pretrained(
 )
 
 class _ElectraSpacer:
-    def __init__(self, max_len=256, output_dir="./result"):
+    def __init__(self, max_len=256, output_dir="./output"):
         start = time.time()
         self.tokenizer = tokenizer
         self.model = model
